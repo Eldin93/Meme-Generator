@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* --- HEADER SECTION --- */
+
+.header {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(90deg, #194f8d 1.18%, #0e68ce 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  margin-right: 35px;
+  margin-top: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#troll {
+  width: 45px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 7px;
+}
+
+/* --- MAIN SECTION --- */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input-fields {
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input-fields input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #d5d4d8;
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  padding: 0.5em;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#space {
+  width: 1.5em;
+}
+
+.main-content button {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, #194f8d 1.18%, #0e68ce 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 35px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.main-content button:hover {
+  background: linear-gradient(90deg, #2065b4 1.18%, #0f76ec 100%);
+}
+
+.meme {
+  position: relative;
+}
+
+.meme img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  font-family: impact, sans-serif;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+  .header p {
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+
+  #troll {
+    width: 40px;
+  }
+  .input-fields {
+    display: flex;
+    justify-content: center;
+  }
+  .input-fields input {
+    width: 100%;
+  }
+  #space {
+    width: 0.5em;
+  }
+
+  .meme--text {
+    font-size: 1.4em;
+    width: 80%;
+  }
+}
